@@ -1,0 +1,3 @@
+/home/fanghz/project/folly_template/build/CMakeFiles/match_engine.dir
+/home/fanghz/project/folly_template/build/CMakeFiles/edit_cache.dir
+/home/fanghz/project/folly_template/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,6 @@
+{
+    "subject_matters":["A-B","B-C","C-D","D-E","E-F"],
+    "org_size":160,
+    "contrace_queue_size":1000,
+    "org_partition_size":30
+}
