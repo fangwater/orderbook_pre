@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.22)
 set(CMAKE_C_COMPILER "/usr/bin/clang-18")
 set(CMAKE_CXX_COMPILER "/usr/bin/clang++-18")
-SET(CMAKE_TOOLCHAIN_FILE "/home/fanghz/lib/vcpkg/scripts/buildsystems/vcpkg.cmake")
+SET(CMAKE_TOOLCHAIN_FILE "/home/fanghaizhou/software/vcpkg/scripts/buildsystems/vcpkg.cmake")
 project(replay)
 set(CMAKE_CXX_STANDARD 20)
 # SET(CMAKE_BUILD_TYPE "Debug")
@@ -12,10 +12,7 @@ find_package(fmt CONFIG REQUIRED)
 find_package(TBB CONFIG REQUIRED)
 find_package(cppzmq CONFIG REQUIRED)
 find_package(folly CONFIG REQUIRED)
-find_package(PkgConfig)
 find_package(xsimd CONFIG REQUIRED)
-pkg_check_modules(liburing REQUIRED IMPORTED_TARGET GLOBAL liburing>=2.0)
-find_package(GTest CONFIG REQUIRED)
 
 set(absl_LIBRARIES
 absl::algorithm
@@ -38,8 +35,20 @@ absl::config
 absl::base
 absl::flags_parse
 absl::utility)
-include_directories(${PROJECT_SOURCE_DIR}/src)
-add_executable(match_engine main.cc orderbook.cc order.cc)
+add_executable(match_engine
+    main.cc
+    config.cc
+    contract.cc
+    credit.cc
+    orderbook.cc
+    order.cc
+    price_leader.cc
+)
+
+target_include_directories(match_engine PRIVATE
+    ${PROJECT_SOURCE_DIR}
+)
+
 
 
 # if (CMAKE_CXX_COMPILER_ID MATCHES "GNU")
@@ -56,7 +65,6 @@ add_executable(match_engine main.cc orderbook.cc order.cc)
 
 target_link_libraries(match_engine ${absl_LIBRARIES})
 target_link_libraries(match_engine fmt::fmt)
-target_link_libraries(match_engine PkgConfig::liburing)
 target_link_libraries(match_engine TBB::tbb TBB::tbbmalloc)
 target_link_libraries(match_engine Folly::folly Folly::folly_deps Folly::follybenchmark Folly::folly_test_util)
 target_link_libraries(match_engine xsimd)

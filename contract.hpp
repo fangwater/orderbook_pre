@@ -8,27 +8,38 @@
 #include "credit.hpp"
 #include "order_tick.hpp"
 #include "orderbook.hpp"
+#include <atomic>
 #include <cstddef>
+#include <functional>
 #include <memory>
+#include <mutex>
 #include <vector>
 std::vector<std::pair<size_t, size_t>> split_vector(size_t total_size, size_t K);
 
 using OrderBookSp = std::shared_ptr<OrderBook>;
-
 class Contract {
 public:
-    Contract();
+    explicit Contract(std::shared_ptr<BiCredit> bi_credit);
     bool push(const OrderTick &tick);
-    bool send_tick_for_all(const OrderTick& tick);
-    bool send_sync_for_all();
+    //转发到多个独立的处理组，多线程处理
+    bool proxy_tick_for_all(const OrderTick &tick);
     //处理授信变更的情况
     bool handle_credit_update();
+    //启动tick分发
     void run();
+    //启动各个group的处理线程
+    void run_groups();
 private:
     //查询order对于目标机构
     bool filter_by_credit(const OrderTick &tick, OrgNo_t org_index);
 
+    void ordertick_process(int group_index);
+
 private:
+    //多线程处理时的同步锁
+    std::mutex mu;
+    std::atomic<int> sync_counter;
+    std::atomic<bool> ready;
     //机构数
     int org_size_; 
     /**
@@ -40,8 +51,8 @@ private:
      * @brief 执行线程拆分机制
      * 对于每个机构，需要维护自己的副本orderbook，但如果每个orderbook占据一个线程
      * 则需要的线程数等于(机构数 \times 合约数)，并不合理
-     * 因此设计一种拆分的执行方法，即对于每个合约内部，将所有机构拆分为K个block
-     * 每个block管理一部分orderbook，同步的单位为block
+     * 因此设计一种拆分的执行方法，即对于每个合约内部，将所有机构拆分为K个partition
+     * 每个partition管理一部分orderbook，同步的单位为block
      */
     std::vector<std::pair<size_t, size_t>> org_partitions_;
     //每个partition的缓冲池
@@ -53,6 +64,8 @@ public:
     std::vector<std::shared_ptr<OrderBook>> private_orderbooks_;
     //保留一个公有订单薄，处理授信变更的情况
     std::shared_ptr<OrderBook> public_orderbook_;
+    //同步事件回调
+    std::function<void()> sync_event_handler;
 };
 
 
@@ -62,10 +75,13 @@ public:
  */
 class ContractManager {
 public:
+    std::vector<std::string> contract_symbols_;
+    std::shared_ptr<BiCredit> bi_credit_;
     ContractManager();
     void run();
 
 private:
+    std::atomic<bool> running_flag_;
 public:
     std::unique_ptr<absl::flat_hash_map<std::string, int>> symbol_to_index_;
     std::vector<std::unique_ptr<Contract>> contracts_;

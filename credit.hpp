@@ -19,6 +19,13 @@ public:
 
     template<char Side>
     void set(int from, int to, Credit_t credit);
+
+    // 设置为全授信
+    void set_full_credit();
+
+    // 设置为零授信
+    void set_zero_credit();
+
     //构造函数
     BiCredit();
 public:

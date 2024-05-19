@@ -11,6 +11,7 @@ struct OrderTick {
     constexpr static char OrderCancel = 'D';
     constexpr static char OrderMod = 'M';
     constexpr static char Sync = 'S';
+    std::string contract_;
     char type; //Add Del Mod Sync
     char b_s; // B S
     int64_t timestamp; // 时间

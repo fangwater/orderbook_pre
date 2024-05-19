@@ -17,10 +17,12 @@ Config &Config::instance() {
 }
 
 Config::Config() {
-    json params = open_json_file("./config.json");
+    json params = open_json_file("../config.json");
     org_counts_ = params["org_size"];
     org_partition_size_ = params["org_partition_size"];
     subject_matters_ = params["subject_matters"].get<std::vector<std::string>>();
-    contrace_queue_size_ = params["contrace_queue_size"];
+    contract_queue_size_ = params["contract_queue_size"];
+    order_pool_size_ = params["order_pool_size"];
+    level_pool_size_ = params["level_pool_size"];
 }
 

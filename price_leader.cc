@@ -1,5 +1,8 @@
 #include "price_leader.hpp"
 #include "order.hpp"
+#include <stdexcept>
+PriceLeader::PriceLeader() : price_(0){}
+
 void PriceLeader::remove(LinkedOrder &order) {
     order_list_.remove(order);
     if (order_pool_) {
@@ -8,6 +11,14 @@ void PriceLeader::remove(LinkedOrder &order) {
         throw std::runtime_error("order pool is not bind");
     }
 }
+
+LinkedOrder &PriceLeader::get_time_first_order() {
+    if (order_list_.empty()) {
+        throw std::runtime_error("trying to get the order from empty price level");
+    }
+    return order_list_.front();
+}
+
 std::optional<LinkedOrder *> PriceLeader::find_order(OrderNo_t orderNo) {
     for (auto iter = order_list_.begin(); iter != order_list_.end(); iter++) {
         if (iter->orderNo_ == orderNo) {

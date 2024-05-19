@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/fanghz/project/folly_template
+CMAKE_SOURCE_DIR = /home/fanghaizhou/project/orderbook_pre
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/fanghz/project/folly_template/build
+CMAKE_BINARY_DIR = /home/fanghaizhou/project/orderbook_pre/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/match_engine.dir/depend.make
@@ -72,159 +72,224 @@ include CMakeFiles/match_engine.dir/flags.make
 CMakeFiles/match_engine.dir/main.cc.o: CMakeFiles/match_engine.dir/flags.make
 CMakeFiles/match_engine.dir/main.cc.o: ../main.cc
 CMakeFiles/match_engine.dir/main.cc.o: CMakeFiles/match_engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fanghz/project/folly_template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/match_engine.dir/main.cc.o"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/match_engine.dir/main.cc.o -MF CMakeFiles/match_engine.dir/main.cc.o.d -o CMakeFiles/match_engine.dir/main.cc.o -c /home/fanghz/project/folly_template/main.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fanghaizhou/project/orderbook_pre/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/match_engine.dir/main.cc.o"
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/match_engine.dir/main.cc.o -MF CMakeFiles/match_engine.dir/main.cc.o.d -o CMakeFiles/match_engine.dir/main.cc.o -c /home/fanghaizhou/project/orderbook_pre/main.cc
 
 CMakeFiles/match_engine.dir/main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/match_engine.dir/main.cc.i"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fanghz/project/folly_template/main.cc > CMakeFiles/match_engine.dir/main.cc.i
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fanghaizhou/project/orderbook_pre/main.cc > CMakeFiles/match_engine.dir/main.cc.i
 
 CMakeFiles/match_engine.dir/main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/match_engine.dir/main.cc.s"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fanghz/project/folly_template/main.cc -o CMakeFiles/match_engine.dir/main.cc.s
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fanghaizhou/project/orderbook_pre/main.cc -o CMakeFiles/match_engine.dir/main.cc.s
+
+CMakeFiles/match_engine.dir/config.cc.o: CMakeFiles/match_engine.dir/flags.make
+CMakeFiles/match_engine.dir/config.cc.o: ../config.cc
+CMakeFiles/match_engine.dir/config.cc.o: CMakeFiles/match_engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fanghaizhou/project/orderbook_pre/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/match_engine.dir/config.cc.o"
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/match_engine.dir/config.cc.o -MF CMakeFiles/match_engine.dir/config.cc.o.d -o CMakeFiles/match_engine.dir/config.cc.o -c /home/fanghaizhou/project/orderbook_pre/config.cc
+
+CMakeFiles/match_engine.dir/config.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/match_engine.dir/config.cc.i"
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fanghaizhou/project/orderbook_pre/config.cc > CMakeFiles/match_engine.dir/config.cc.i
+
+CMakeFiles/match_engine.dir/config.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/match_engine.dir/config.cc.s"
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fanghaizhou/project/orderbook_pre/config.cc -o CMakeFiles/match_engine.dir/config.cc.s
+
+CMakeFiles/match_engine.dir/contract.cc.o: CMakeFiles/match_engine.dir/flags.make
+CMakeFiles/match_engine.dir/contract.cc.o: ../contract.cc
+CMakeFiles/match_engine.dir/contract.cc.o: CMakeFiles/match_engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fanghaizhou/project/orderbook_pre/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/match_engine.dir/contract.cc.o"
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/match_engine.dir/contract.cc.o -MF CMakeFiles/match_engine.dir/contract.cc.o.d -o CMakeFiles/match_engine.dir/contract.cc.o -c /home/fanghaizhou/project/orderbook_pre/contract.cc
+
+CMakeFiles/match_engine.dir/contract.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/match_engine.dir/contract.cc.i"
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fanghaizhou/project/orderbook_pre/contract.cc > CMakeFiles/match_engine.dir/contract.cc.i
+
+CMakeFiles/match_engine.dir/contract.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/match_engine.dir/contract.cc.s"
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fanghaizhou/project/orderbook_pre/contract.cc -o CMakeFiles/match_engine.dir/contract.cc.s
+
+CMakeFiles/match_engine.dir/credit.cc.o: CMakeFiles/match_engine.dir/flags.make
+CMakeFiles/match_engine.dir/credit.cc.o: ../credit.cc
+CMakeFiles/match_engine.dir/credit.cc.o: CMakeFiles/match_engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fanghaizhou/project/orderbook_pre/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/match_engine.dir/credit.cc.o"
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/match_engine.dir/credit.cc.o -MF CMakeFiles/match_engine.dir/credit.cc.o.d -o CMakeFiles/match_engine.dir/credit.cc.o -c /home/fanghaizhou/project/orderbook_pre/credit.cc
+
+CMakeFiles/match_engine.dir/credit.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/match_engine.dir/credit.cc.i"
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fanghaizhou/project/orderbook_pre/credit.cc > CMakeFiles/match_engine.dir/credit.cc.i
+
+CMakeFiles/match_engine.dir/credit.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/match_engine.dir/credit.cc.s"
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fanghaizhou/project/orderbook_pre/credit.cc -o CMakeFiles/match_engine.dir/credit.cc.s
 
 CMakeFiles/match_engine.dir/orderbook.cc.o: CMakeFiles/match_engine.dir/flags.make
 CMakeFiles/match_engine.dir/orderbook.cc.o: ../orderbook.cc
 CMakeFiles/match_engine.dir/orderbook.cc.o: CMakeFiles/match_engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fanghz/project/folly_template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/match_engine.dir/orderbook.cc.o"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/match_engine.dir/orderbook.cc.o -MF CMakeFiles/match_engine.dir/orderbook.cc.o.d -o CMakeFiles/match_engine.dir/orderbook.cc.o -c /home/fanghz/project/folly_template/orderbook.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fanghaizhou/project/orderbook_pre/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/match_engine.dir/orderbook.cc.o"
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/match_engine.dir/orderbook.cc.o -MF CMakeFiles/match_engine.dir/orderbook.cc.o.d -o CMakeFiles/match_engine.dir/orderbook.cc.o -c /home/fanghaizhou/project/orderbook_pre/orderbook.cc
 
 CMakeFiles/match_engine.dir/orderbook.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/match_engine.dir/orderbook.cc.i"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fanghz/project/folly_template/orderbook.cc > CMakeFiles/match_engine.dir/orderbook.cc.i
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fanghaizhou/project/orderbook_pre/orderbook.cc > CMakeFiles/match_engine.dir/orderbook.cc.i
 
 CMakeFiles/match_engine.dir/orderbook.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/match_engine.dir/orderbook.cc.s"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fanghz/project/folly_template/orderbook.cc -o CMakeFiles/match_engine.dir/orderbook.cc.s
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fanghaizhou/project/orderbook_pre/orderbook.cc -o CMakeFiles/match_engine.dir/orderbook.cc.s
 
 CMakeFiles/match_engine.dir/order.cc.o: CMakeFiles/match_engine.dir/flags.make
 CMakeFiles/match_engine.dir/order.cc.o: ../order.cc
 CMakeFiles/match_engine.dir/order.cc.o: CMakeFiles/match_engine.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fanghz/project/folly_template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/match_engine.dir/order.cc.o"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/match_engine.dir/order.cc.o -MF CMakeFiles/match_engine.dir/order.cc.o.d -o CMakeFiles/match_engine.dir/order.cc.o -c /home/fanghz/project/folly_template/order.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fanghaizhou/project/orderbook_pre/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/match_engine.dir/order.cc.o"
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/match_engine.dir/order.cc.o -MF CMakeFiles/match_engine.dir/order.cc.o.d -o CMakeFiles/match_engine.dir/order.cc.o -c /home/fanghaizhou/project/orderbook_pre/order.cc
 
 CMakeFiles/match_engine.dir/order.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/match_engine.dir/order.cc.i"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fanghz/project/folly_template/order.cc > CMakeFiles/match_engine.dir/order.cc.i
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fanghaizhou/project/orderbook_pre/order.cc > CMakeFiles/match_engine.dir/order.cc.i
 
 CMakeFiles/match_engine.dir/order.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/match_engine.dir/order.cc.s"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fanghz/project/folly_template/order.cc -o CMakeFiles/match_engine.dir/order.cc.s
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fanghaizhou/project/orderbook_pre/order.cc -o CMakeFiles/match_engine.dir/order.cc.s
+
+CMakeFiles/match_engine.dir/price_leader.cc.o: CMakeFiles/match_engine.dir/flags.make
+CMakeFiles/match_engine.dir/price_leader.cc.o: ../price_leader.cc
+CMakeFiles/match_engine.dir/price_leader.cc.o: CMakeFiles/match_engine.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/fanghaizhou/project/orderbook_pre/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/match_engine.dir/price_leader.cc.o"
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/match_engine.dir/price_leader.cc.o -MF CMakeFiles/match_engine.dir/price_leader.cc.o.d -o CMakeFiles/match_engine.dir/price_leader.cc.o -c /home/fanghaizhou/project/orderbook_pre/price_leader.cc
+
+CMakeFiles/match_engine.dir/price_leader.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/match_engine.dir/price_leader.cc.i"
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/fanghaizhou/project/orderbook_pre/price_leader.cc > CMakeFiles/match_engine.dir/price_leader.cc.i
+
+CMakeFiles/match_engine.dir/price_leader.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/match_engine.dir/price_leader.cc.s"
+	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/fanghaizhou/project/orderbook_pre/price_leader.cc -o CMakeFiles/match_engine.dir/price_leader.cc.s
 
 # Object files for target match_engine
 match_engine_OBJECTS = \
 "CMakeFiles/match_engine.dir/main.cc.o" \
+"CMakeFiles/match_engine.dir/config.cc.o" \
+"CMakeFiles/match_engine.dir/contract.cc.o" \
+"CMakeFiles/match_engine.dir/credit.cc.o" \
 "CMakeFiles/match_engine.dir/orderbook.cc.o" \
-"CMakeFiles/match_engine.dir/order.cc.o"
+"CMakeFiles/match_engine.dir/order.cc.o" \
+"CMakeFiles/match_engine.dir/price_leader.cc.o"
 
 # External object files for target match_engine
 match_engine_EXTERNAL_OBJECTS =
 
 match_engine: CMakeFiles/match_engine.dir/main.cc.o
+match_engine: CMakeFiles/match_engine.dir/config.cc.o
+match_engine: CMakeFiles/match_engine.dir/contract.cc.o
+match_engine: CMakeFiles/match_engine.dir/credit.cc.o
 match_engine: CMakeFiles/match_engine.dir/orderbook.cc.o
 match_engine: CMakeFiles/match_engine.dir/order.cc.o
+match_engine: CMakeFiles/match_engine.dir/price_leader.cc.o
 match_engine: CMakeFiles/match_engine.dir/build.make
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_base.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_strings.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_synchronization.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_time.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_flags.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_strings.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_flags_internal.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_log_initialize.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_base.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_flags_parse.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libfmt.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libtbb.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libtbbmalloc.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libfolly.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libfollybenchmark.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libfolly_test_util.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libtbb.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libtbbmalloc.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_leak_check.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_log_internal_conditions.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_log_internal_message.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_examine_stack.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_log_internal_format.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_log_internal_proto.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_log_internal_nullguard.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_log_internal_log_sink_set.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_log_sink.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_log_entry.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_strerror.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_log_globals.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_log_internal_globals.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_flags_usage.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_flags_usage_internal.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_flags.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_flags_internal.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_flags_marshalling.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_str_format_internal.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_flags_reflection.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_cord.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_cordz_info.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_cord_internal.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_cordz_functions.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_cordz_handle.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_crc_cord_state.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_crc32c.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_crc_internal.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_crc_cpu_detect.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_hash.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_city.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_bad_variant_access.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_low_level_hash.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_raw_hash_set.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_hashtablez_sampler.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_exponential_biased.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_flags_config.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_flags_private_handle_accessor.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_flags_commandlineflag.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_bad_optional_access.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_flags_commandlineflag_internal.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_flags_program_name.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_synchronization.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_stacktrace.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_graphcycles_internal.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_time.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_civil_time.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_time_zone.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_symbolize.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_malloc_internal.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_debugging_internal.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_demangle_internal.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_strings.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_int128.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_strings_internal.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_base.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_spinlock_wait.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_throw_delegate.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_raw_logging_internal.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libabsl_log_severity.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/debug/lib/liburing.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libfolly.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libfmt.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/debug/lib/libboost_context.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/debug/lib/libboost_filesystem.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/debug/lib/libboost_program_options.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/debug/lib/libboost_regex.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/debug/lib/libboost_system.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/debug/lib/libboost_thread.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/debug/lib/libboost_chrono.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/debug/lib/libboost_atomic.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libdouble-conversion.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libglog.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libgflags.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libevent_extra.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libevent_pthreads.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libevent_core.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libz.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libssl.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libcrypto.a
-match_engine: /home/fanghz/lib/vcpkg/installed/x64-linux/lib/libzmq.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_base.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_strings.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_synchronization.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_time.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_strings.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_flags_internal.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_log_initialize.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_base.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_flags_parse.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libfmt.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libtbb.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libtbbmalloc.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libfolly.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libfollybenchmark.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libfolly_test_util.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libtbb.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libtbbmalloc.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_leak_check.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_log_internal_conditions.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_log_internal_message.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_examine_stack.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_log_internal_format.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_log_internal_proto.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_log_internal_nullguard.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_log_internal_log_sink_set.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_log_sink.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_log_entry.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_strerror.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_log_globals.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_vlog_config_internal.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_log_internal_fnmatch.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_log_internal_globals.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_flags_usage.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_flags_usage_internal.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_flags_internal.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_flags_marshalling.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_flags_reflection.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_cord.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_cordz_info.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_cord_internal.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_cordz_functions.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_cordz_handle.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_crc_cord_state.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_crc32c.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_str_format_internal.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_crc_internal.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_crc_cpu_detect.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_raw_hash_set.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_hash.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_city.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_bad_variant_access.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_low_level_hash.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_hashtablez_sampler.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_exponential_biased.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_flags_config.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_flags_private_handle_accessor.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_flags_commandlineflag.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_bad_optional_access.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_flags_commandlineflag_internal.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_flags_program_name.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_synchronization.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_stacktrace.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_graphcycles_internal.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_kernel_timeout_internal.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_time.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_civil_time.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_time_zone.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_symbolize.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_malloc_internal.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_debugging_internal.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_demangle_internal.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_strings.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_int128.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_strings_internal.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_string_view.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_base.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_spinlock_wait.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_throw_delegate.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_raw_logging_internal.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libabsl_log_severity.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libfolly.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libfmt.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/debug/lib/libboost_context.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/debug/lib/libboost_filesystem.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/debug/lib/libboost_program_options.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/debug/lib/libboost_regex.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/debug/lib/libboost_system.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/debug/lib/libboost_thread.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/debug/lib/libboost_chrono.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/debug/lib/libboost_atomic.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libdouble-conversion.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libglog.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libgflags.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libevent_extra.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libevent_pthreads.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libevent_core.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libz.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libssl.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libcrypto.a
+match_engine: /home/fanghaizhou/software/vcpkg/installed/x64-linux/lib/libzmq.a
 match_engine: CMakeFiles/match_engine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/fanghz/project/folly_template/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable match_engine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/fanghaizhou/project/orderbook_pre/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable match_engine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/match_engine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -236,6 +301,6 @@ CMakeFiles/match_engine.dir/clean:
 .PHONY : CMakeFiles/match_engine.dir/clean
 
 CMakeFiles/match_engine.dir/depend:
-	cd /home/fanghz/project/folly_template/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fanghz/project/folly_template /home/fanghz/project/folly_template /home/fanghz/project/folly_template/build /home/fanghz/project/folly_template/build /home/fanghz/project/folly_template/build/CMakeFiles/match_engine.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/fanghaizhou/project/orderbook_pre/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/fanghaizhou/project/orderbook_pre /home/fanghaizhou/project/orderbook_pre /home/fanghaizhou/project/orderbook_pre/build /home/fanghaizhou/project/orderbook_pre/build /home/fanghaizhou/project/orderbook_pre/build/CMakeFiles/match_engine.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/match_engine.dir/depend
 

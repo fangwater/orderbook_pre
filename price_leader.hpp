@@ -16,7 +16,7 @@ public:
     bool remove(OrderNo_t orderNo);
     void push_back(LinkedOrder &order);
     std::optional<LinkedOrder *> find_order(OrderNo_t orderNo);
-
+    LinkedOrder& get_time_first_order();
 public:
     //节点价格
     Price_t price_;
@@ -30,6 +30,7 @@ public:
      */
     std::shared_ptr<LinkedOrderPool> order_pool_;
 };
+
 
 
 /**

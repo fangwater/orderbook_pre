@@ -145,3 +145,35 @@ void OrderBook::process_order_add(OrderTick *tick) {
         }
     }
 }
+
+void OrderBook::process_order(OrderTick *tick) {
+    if (tick->type == OrderTick::Sync) {
+        throw std::runtime_error("error type SYNC, should not process here!");
+    } else if (tick->type == OrderTick::OrderAdd) {
+        if (tick->b_s == 'B') {
+            process_order_add<'B'>(tick);
+        } else if (tick->b_s == 'S') {
+            process_order_add<'S'>(tick);
+        } else {
+            throw std::runtime_error(fmt::format("error side {}, should be B/S", tick->b_s));
+        }
+    } else if (tick->type == OrderTick::OrderCancel) {
+        if (tick->b_s == 'B') {
+            process_order_del<'B'>(tick);
+        } else if (tick->b_s == 'S') {
+            process_order_del<'S'>(tick);
+        } else {
+            throw std::runtime_error(fmt::format("error side {}, should be B/S", tick->b_s));
+        }
+    } else if (tick->type == OrderTick::OrderMod){
+        if (tick->b_s == 'B') {
+            process_order_mod<'B'>(tick);
+        } else if (tick->b_s == 'S') {
+            process_order_mod<'S'>(tick);
+        } else {
+            throw std::runtime_error(fmt::format("error side {}, should be B/S", tick->b_s));
+        }
+    } else {
+        throw std::runtime_error(fmt::format("error type {}, should be A/D/M", tick->type));
+    }
+}

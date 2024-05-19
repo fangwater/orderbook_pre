@@ -1,5 +1,5 @@
-CMakeFiles/match_engine.dir/main.cc.o: \
-  /home/fanghaizhou/project/orderbook_pre/main.cc \
+CMakeFiles/match_engine.dir/contract.cc.o: \
+  /home/fanghaizhou/project/orderbook_pre/contract.cc \
   /home/fanghaizhou/project/orderbook_pre/contract.hpp \
   /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/absl/container/flat_hash_map.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/cstddef \
@@ -594,4 +594,67 @@ CMakeFiles/match_engine.dir/main.cc.o: \
   /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/absl/log/log.h \
   /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/absl/log/vlog_is_on.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/mutex \
-  /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/unique_lock.h
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/unique_lock.h \
+  /home/fanghaizhou/project/orderbook_pre/config.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/json.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/adl_serializer.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/detail/abi_macros.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/detail/conversions/from_json.hpp \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/valarray \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/valarray_array.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/valarray_array.tcc \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/valarray_before.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/slice_array.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/valarray_after.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/gslice.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/gslice_array.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/mask_array.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/indirect_array.h \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/detail/exceptions.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/detail/value_t.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/detail/macro_scope.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/detail/meta/detected.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/detail/meta/void_t.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/thirdparty/hedley/hedley.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/detail/string_escape.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/detail/input/position_t.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/detail/meta/cpp_future.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/detail/meta/type_traits.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/detail/iterators/iterator_traits.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/detail/meta/call_std/begin.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/detail/meta/call_std/end.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/json_fwd.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/detail/string_concat.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/detail/meta/identity_tag.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/detail/meta/std_fs.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/detail/conversions/to_json.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/detail/iterators/iteration_proxy.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/byte_container_with_subtype.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/detail/hash.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/detail/input/binary_reader.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/detail/input/input_adapters.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/detail/input/json_sax.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/detail/input/lexer.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/detail/meta/is_sax.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/detail/input/parser.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/detail/iterators/internal_iterator.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/detail/iterators/primitive_iterator.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/detail/iterators/iter_impl.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/detail/iterators/json_reverse_iterator.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/detail/json_custom_base_class.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/detail/json_pointer.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/detail/json_ref.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/detail/output/binary_writer.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/detail/output/output_adapters.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/detail/output/serializer.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/detail/conversions/to_chars.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/ordered_map.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/detail/macro_unscope.hpp \
+  /home/fanghaizhou/software/vcpkg/installed/x64-linux/include/nlohmann/thirdparty/hedley/hedley_undef.hpp \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/thread \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_thread.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/semaphore_base.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/atomic_timed_wait.h \
+  /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/this_thread_sleep.h \
+  /usr/include/semaphore.h \
+  /usr/include/x86_64-linux-gnu/bits/semaphore.h

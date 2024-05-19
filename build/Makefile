@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/fanghz/project/folly_template
+CMAKE_SOURCE_DIR = /home/fanghaizhou/project/orderbook_pre
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/fanghz/project/folly_template/build
+CMAKE_BINARY_DIR = /home/fanghaizhou/project/orderbook_pre/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fanghz/project/folly_template/build/CMakeFiles /home/fanghz/project/folly_template/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fanghaizhou/project/orderbook_pre/build/CMakeFiles /home/fanghaizhou/project/orderbook_pre/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fanghz/project/folly_template/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fanghaizhou/project/orderbook_pre/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,6 +128,78 @@ match_engine: cmake_check_build_system
 match_engine/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/match_engine.dir/build.make CMakeFiles/match_engine.dir/build
 .PHONY : match_engine/fast
+
+config.o: config.cc.o
+.PHONY : config.o
+
+# target to build an object file
+config.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/match_engine.dir/build.make CMakeFiles/match_engine.dir/config.cc.o
+.PHONY : config.cc.o
+
+config.i: config.cc.i
+.PHONY : config.i
+
+# target to preprocess a source file
+config.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/match_engine.dir/build.make CMakeFiles/match_engine.dir/config.cc.i
+.PHONY : config.cc.i
+
+config.s: config.cc.s
+.PHONY : config.s
+
+# target to generate assembly for a file
+config.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/match_engine.dir/build.make CMakeFiles/match_engine.dir/config.cc.s
+.PHONY : config.cc.s
+
+contract.o: contract.cc.o
+.PHONY : contract.o
+
+# target to build an object file
+contract.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/match_engine.dir/build.make CMakeFiles/match_engine.dir/contract.cc.o
+.PHONY : contract.cc.o
+
+contract.i: contract.cc.i
+.PHONY : contract.i
+
+# target to preprocess a source file
+contract.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/match_engine.dir/build.make CMakeFiles/match_engine.dir/contract.cc.i
+.PHONY : contract.cc.i
+
+contract.s: contract.cc.s
+.PHONY : contract.s
+
+# target to generate assembly for a file
+contract.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/match_engine.dir/build.make CMakeFiles/match_engine.dir/contract.cc.s
+.PHONY : contract.cc.s
+
+credit.o: credit.cc.o
+.PHONY : credit.o
+
+# target to build an object file
+credit.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/match_engine.dir/build.make CMakeFiles/match_engine.dir/credit.cc.o
+.PHONY : credit.cc.o
+
+credit.i: credit.cc.i
+.PHONY : credit.i
+
+# target to preprocess a source file
+credit.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/match_engine.dir/build.make CMakeFiles/match_engine.dir/credit.cc.i
+.PHONY : credit.cc.i
+
+credit.s: credit.cc.s
+.PHONY : credit.s
+
+# target to generate assembly for a file
+credit.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/match_engine.dir/build.make CMakeFiles/match_engine.dir/credit.cc.s
+.PHONY : credit.cc.s
 
 main.o: main.cc.o
 .PHONY : main.o
@@ -201,6 +273,30 @@ orderbook.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/match_engine.dir/build.make CMakeFiles/match_engine.dir/orderbook.cc.s
 .PHONY : orderbook.cc.s
 
+price_leader.o: price_leader.cc.o
+.PHONY : price_leader.o
+
+# target to build an object file
+price_leader.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/match_engine.dir/build.make CMakeFiles/match_engine.dir/price_leader.cc.o
+.PHONY : price_leader.cc.o
+
+price_leader.i: price_leader.cc.i
+.PHONY : price_leader.i
+
+# target to preprocess a source file
+price_leader.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/match_engine.dir/build.make CMakeFiles/match_engine.dir/price_leader.cc.i
+.PHONY : price_leader.cc.i
+
+price_leader.s: price_leader.cc.s
+.PHONY : price_leader.s
+
+# target to generate assembly for a file
+price_leader.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/match_engine.dir/build.make CMakeFiles/match_engine.dir/price_leader.cc.s
+.PHONY : price_leader.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -210,6 +306,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... match_engine"
+	@echo "... config.o"
+	@echo "... config.i"
+	@echo "... config.s"
+	@echo "... contract.o"
+	@echo "... contract.i"
+	@echo "... contract.s"
+	@echo "... credit.o"
+	@echo "... credit.i"
+	@echo "... credit.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -219,6 +324,9 @@ help:
 	@echo "... orderbook.o"
 	@echo "... orderbook.i"
 	@echo "... orderbook.s"
+	@echo "... price_leader.o"
+	@echo "... price_leader.i"
+	@echo "... price_leader.s"
 .PHONY : help
 
 

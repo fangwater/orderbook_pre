@@ -33,11 +33,17 @@ private:
     //买卖队列
     PriceLevel<'B'> buy_levels;
     PriceLevel<'S'> sell_levels;
+
 public:
-    OrderBook(size_t queue_size, size_t order_pool_size, size_t level_pool_size){
+    OrderBook() = delete;
+    OrderBook(size_t order_pool_size, size_t level_pool_size){
         order_pool_ = std::make_shared<LinkedOrderPool>(order_pool_size);
         level_pool_ = std::make_shared<LevelPool>(level_pool_size);
     }
+
+    template<char Side>
+    LinkedOrder& best_order();
+  
     template<char Side>
     void process_order_mod(OrderTick *tick);
 
@@ -46,8 +52,22 @@ public:
 
     template<char Side>
     void process_order_del(OrderTick *tick);
+
+    void process_order(OrderTick* tick);
+
     void display_order_book(int level);
 };
+
+template<char Side>
+LinkedOrder& OrderBook::best_order() {
+    if constexpr (Side == 'B') {
+        return buy_levels.begin()->second->get_time_first_order();
+    } else if constexpr (Side == 'S') {
+        return sell_levels.begin()->second->get_time_first_order();
+    } else {
+        static_assert(Side == 'B' || Side == 'S', "Side must be 'B' or 'S'");
+    }
+}
 
 template<char Side>
 void OrderBook::remove_level(typename PriceLevel<Side>::iterator level_iter) {
@@ -78,14 +98,14 @@ void OrderBook::delete_order(int64_t price, OrderNo_t orderNo) {
         }
     }
     level_iter->second->remove(orderNo);
-    if (level_iter->second->order_list.empty()) {
+    if (level_iter->second->order_list_.empty()) {
         remove_level<Side>(level_iter);
     }
 }
 template<char Side>
 void OrderBook::delete_order(typename PriceLevel<Side>::iterator level_iter, OrderNo_t orderNo) {
     level_iter->second->remove(orderNo);
-    if (level_iter->second->order_list.empty()) {
+    if (level_iter->second->order_list_.empty()) {
         remove_level<Side>(level_iter);
     }
 }
